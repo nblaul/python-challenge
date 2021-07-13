@@ -3,8 +3,6 @@ import csv
 
 csvpath = os.path.join('Resources', 'budget_data.csv')
 
-total = []
-
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader)
